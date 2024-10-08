@@ -1,0 +1,327 @@
+/* 
+    Tambien se quita los margenes para las listas y se deforman
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+    Arreglo para las listas
+*/
+ul, ol {
+    margin-left: 20px;
+}
+
+/* ----------------------------- HEADER GLOBAL ----------------------------- */
+
+header {
+    background-image: url("../img/Designer.png");
+    padding: 10px;
+    height: 8vh;
+    /* imagenFixed clase en GLOBAL */
+}
+
+.menuNavUl > li {
+    list-style-type: none;
+}
+
+.menuNavUl > li > a{
+    float: left;
+    margin-right: 50px;
+}
+
+.menuNavUl > li > a:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.botonNav {
+    text-align: center;
+    border: 1px solid black;
+    background-color: #8D96EB;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 2vh 1vw;
+    margin: 1vh 0;
+}
+
+.botonNav:hover {
+    background-color: #535baa;
+    color: white;
+}
+
+.menuNavUl > li > a > img {
+    width: 8vh;
+}
+
+.botonFormulario {
+    width: 7vw;
+    height: 6vh;
+}
+
+/* ----------------------------- GLOBAL ----------------------------- */
+
+main {
+    background-color: #CBD8EB;
+    padding: 2vh 0;
+}
+
+.limpiar {
+    clear: both;
+}
+
+.imagenFixed {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.imagenTexto > img {
+    width: 25%;
+    display: block;
+    float: left;
+}
+
+.imagenTexto > p {
+    margin: 0 1vw;
+    width: 70%;
+    float: left;
+    text-align: justify;
+}
+
+/* ----------------------------- FOOTER GLOBAL ----------------------------- */
+
+footer {
+    background-color: #8DB3EA;
+    padding: 2vh 2vw;
+    height: fit-content;
+    text-align: center;
+}
+
+/* ---------------------------------------------------------- INDEX ---------------------------------------------------------- */
+
+/* ----------------------------- TITULO ----------------------------- */
+
+#seccionTitulo {
+    padding: 2vh 10vw;
+}
+
+#seccionTitulo > h1 {
+    text-align: center;
+    font-size: xx-large;
+    padding-bottom: 2vh;
+}
+
+#seccionTitulo > div {
+    text-align: center;
+}
+
+#seccionTitulo > div > img {
+    width: 45vw;
+}
+
+#seccionTitulo > div > p {
+    font-size: x-large;
+    padding: 2vh 0;
+}
+
+/* ----------------------------- ESTADISTICAS (tabla) ----------------------------- */
+
+#seccionTabla {
+    padding: 2vh 0;
+    background-image: url("../img/Designer.png");
+    /* imagenFixed clase en MAIN GLOBAL */
+}
+
+#seccionTabla > div {
+    background-color: #8db4eab4;
+    width: 70vw;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2vh 2vw;
+}
+
+#seccionTabla > div > h2 {
+    text-align: center;
+    margin-bottom: 2vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#tablaEstadisticas {
+    border-collapse: collapse;
+    margin: auto;
+    width: 50vw;
+}
+
+#tablaEstadisticas td, #tablaEstadisticas th {
+    border: 1px solid black;
+    padding: 1vh 1vw;
+}
+
+#tablaEstadisticas th {
+    background-color: rgb(51, 51, 202);
+    color: white;
+}
+
+#tablaEstadisticas tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+#tablaEstadisticas tr:nth-child(odd) {
+    background-color: lightblue;
+}
+
+#tablaEstadisticas tr:hover {
+    background-color: rgb(44, 44, 133);
+    color: white;
+}
+
+/* ----------------------------- MAS FRECUENTES (LISTA) ----------------------------- */
+
+#seccionMasFrecuentes > h2 {
+    margin: 2vh 2vw;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    font-size: x-large;
+    padding: 1vh 0;
+    border-radius: 10px;
+}
+
+#seccionMasFrecuentes > ol {
+    margin: 2vh 5vw;
+    padding: 2vh 30px; /* pongo con px para que no se deforme al hacer zoom */
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightgoldenrodyellow;
+    width: fit-content;
+    margin: auto;
+}
+
+.romano {
+    list-style-type: upper-roman;
+}
+
+.circulo {
+    list-style-type: disc;
+}
+
+.cuadrado {
+    list-style-type: square;
+}
+
+/* ---------------------------------------------------------- PAGINA de FORMULARIO ---------------------------------------------------------- */
+
+/* ----------------------------- FORMULARIO ----------------------------- */
+#seccionFormulario {
+    padding: 2vh 0;
+}
+
+#formulario {
+    margin: auto;
+    width: 45%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2vh 2vw;
+    background-color: #b6bbe9;
+}
+
+#formulario > h2 {
+    text-align: center;
+}
+
+#formulario input[type="text"], #formulario select, textarea {
+    height: 3vh;
+    margin: 1vh 0;
+    padding: 0 .3vw;
+    display: block;
+    width: 100%;
+}
+
+#formulario textarea {
+    padding: 1vh .3vw;
+    resize: none;
+    width: 100%;
+    height: 5vh;
+}
+
+#formulario input[type="radio"] {
+    margin-left: 1vw;
+}
+
+#formulario > hr{
+    margin: 4vh 1vw;
+}
+
+.apartadosFormulario {
+    margin: 0 2vh;
+}
+
+.apartadosFormulario > div {
+    margin: 1vh 0;
+}
+
+#obligatorio {
+    color: red;
+}
+
+#botonesFormulario {
+    text-align: right;
+}
+
+#botonesFormulario input[type="submit"] {
+    width: 10vw;
+    height: 5vh;
+    border-radius: 5px;
+    background-color: #8DEBE6;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#botonesFormulario button {
+    width: 7vw;
+    height: 4vh;
+    border-radius: 5px;
+    background-color: lightgray;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* ----------------------------- COMUNIDAD ----------------------------- */
+
+#seccionComunidad > h2 {
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    font-size: xx-large;
+    padding: 1vh 0;
+}
+
+#seccionComunidad > article {
+    margin: 2vh 2vw;
+}
+
+#seccionComunidad > article > h3{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1vh 0;
+    text-align: center;
+}
+
+#seccionComunidad > article > div {
+    margin: 5vh 5vw;
+}
+
+/* imagenTitulo en general */
+
+#seccionComunidad > article > p {
+    clear: both;
+    text-align: center;
+    font-size: large;
+}

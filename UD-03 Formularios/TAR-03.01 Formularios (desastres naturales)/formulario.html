@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang=es>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Jose Luis del Valle" />
+        <title>Desastres Naturales - Jose Luis del Valle</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header class="imagenFixed">
+            <nav>
+                <ul class="menuNavUl">
+                    <li><a href=index.html><img src="img/logo.png" alt="Logo" /></a></li>
+                    <li><a class="botonNav" href="formulario.html">Noticias</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- ---------- Sección de FORMULARIO ---------- -->
+            <section id="seccionFormulario">
+                <form id="formulario" action="recoger.php" method="GET">
+                    <h2>Desastre Natural</h2>
+                    <div class="apartadosFormulario">
+                        <div>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" />
+                        </div>
+                        <div>
+                            <label for="apellidos">Apellidos:</label>
+                            <input type="text" id="apellidos" name="apellidos" />
+                        </div>
+                        <div>
+                            <label for="sexoHombre">Sexo:</label>
+                            <input type="radio" id="sexoHombre" name="sexo" value="hombre" />
+                            <label for="sexoHombre">Hombre</label>
+                            <input type="radio" id="sexoMujer" name="sexo" value="mujer" />
+                            <label for="sexoMujer">Mujer</label>
+                            <input type="radio" id="sexoOtro" name="sexo" value="otro" />
+                            <label for="sexoOtro">Otro</label>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="apartadosFormulario">
+                        <div>
+                            <label for="nomDesastre">Nombre del desastre:</label>
+                            <input type="text" id="nomDesastre" name="nomDesastre" />
+                        </div>
+                        <div>
+                            <label for="tipo">Tipo:</label>
+                            <select id="tipo" name="tipo">
+                                <option selected disabled>- Selecciona un tipo -</option>
+                                <option value="terremoto">Terremoto</option>
+                                <option value="inundacion">Inundación</option>
+                                <option value="incendio">Incendio</option>
+                                <option value="huracan">Huracán</option>
+                                <option value="tornado">Tornado</option>
+                                <option value="tsunami">Tsunami</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="descripcion">Descripción:</label>
+                            <textarea id="descripcion" name="descripcion"></textarea>
+                        </div>
+                    </div>
+                    <div class="apartadosFormulario">
+                        <div>
+                            <p>Quiero recibir notificaciones de:</p>
+                            <div>
+                                <input type="checkbox" id="terremoto" name="notificaciones[]" value="terremoto" />
+                                <label for="terremoto">Terremotos</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="inundacion" name="notificaciones[]" value="inundacion" />
+                                <label for="inundacion">Inundación</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="incendio" name="notificaciones[]" value="incendio" />
+                                <label for="incendio">Incendio</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="huracan" name="notificaciones[]" value="huracan" />
+                                <label for="huracan">Huracán</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="tornado" name="notificaciones[]" value="tornado" />
+                                <label for="tornado">Tornado</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="tsunami" name="notificaciones[]" value="tsunami" />
+                                <label for="tsunami">Tsunami</label>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="terminos" name="terminos" />
+                            <label for="terminos">Acepto terminos y condiciones <span id="obligatorio">*</span></label>
+                        </div>
+                    </div>
+                    <div id="botonesFormulario">
+                        <button>Reiniciar</button>
+                        <input type="submit" value="Enviar" />
+                    </div>
+                </form>
+            </section>
+            <!-- ---------- FIN de Seccion FORMULARIO ---------- -->
+            <!-- ---------- Seccion de Comunidad y Noticias ---------- -->
+            <section id="seccionComunidad">
+                <h2>De nuestra comunidad</h2>
+                <article>
+                    <h3>Tornado en Badajoz</h3>
+                    <div class="imagenTexto">
+                        <img src="img/tornado.jpeg" alt="FOTO" />
+                        <p>
+                            Hoy en badajoz hemos visto un tornado cerca de la ciudad, por suerte no ha habido grandes daños
+                            Hoy en badajoz hemos visto un tornado cerca de la ciudad, por suerte no ha habido grandes daños
+                            Hoy en badajoz hemos visto un tornado cerca de la ciudad, por suerte no ha habido grandes daños
+                            Hoy en badajoz hemos visto un tornado cerca de la ciudad, por suerte no ha habido grandes daños
+                            Hoy en badajoz hemos visto un tornado cerca de la ciudad, por suerte no ha habido grandes daños
+                            Hoy en badajoz hemos visto un tornado cerca de la ciudad, por suerte no ha habido grandes daños
+                            Hoy en badajoz hemos visto un tornado cerca de la ciudad, por suerte no ha habido grandes daños
+                        </p>
+                    </div>
+                    <p>
+                        Jose Luis del Valle - 21/09/2024
+                    </p>
+                </article>
+                <article>
+                    <h3>Tsunami en Cadiz</h3>
+                    <div class="imagenTexto">
+                        <img src="img/tsunami.jpeg" alt="FOTO" />
+                        <p>
+                            Hoy en Cadiz hemos visto un tsunami cerca de la ciudad, no hay heridos pero si daños materiales
+                            Hoy en Cadiz hemos visto un tsunami cerca de la ciudad, no hay heridos pero si daños materiales
+                            Hoy en Cadiz hemos visto un tsunami cerca de la ciudad, no hay heridos pero si daños materiales
+                            Hoy en Cadiz hemos visto un tsunami cerca de la ciudad, no hay heridos pero si daños materiales
+                            Hoy en Cadiz hemos visto un tsunami cerca de la ciudad, no hay heridos pero si daños materiales
+                            Hoy en Cadiz hemos visto un tsunami cerca de la ciudad, no hay heridos pero si daños materiales
+                        </p>
+                    </div>
+                    <p>
+                        Jose Luis del Valle - 19/09/2024
+                    </p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>Jose Luis del Valle - Desarrollador de Aplicaciones Web</p>
+            <p>Escuela Virgen de Guadalupe</p>
+        </footer>
+    </body>
+</html>

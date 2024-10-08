@@ -1,0 +1,20 @@
+figure {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 1px 1px 10px #888888;
+}
+
+figure:hover {
+    box-shadow: 1px 1px 10px #000000;
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+
+figcaption {
+    font-size: 64px;
+    font-weight: bold;
+    color: blue;
+}
