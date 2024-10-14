@@ -4,10 +4,8 @@
     $fecha = $_GET['fecha'];
 
     $objFecha = new Fecha();
-    $objFecha->convertirFecha($fecha);
-    $objFecha->esBisiesto();
-
-    echo $objFecha->visualizarFecha()."<br/>";
-    echo $objFecha->visualizarDiasMes();
+    echo $objFecha->convertirFecha($fecha);
+    echo '<br />';
+    echo $objFecha->numDias;
 
 ?>

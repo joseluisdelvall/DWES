@@ -1,9 +1,7 @@
 <?php
     class Fecha {
         private array $fechas;
-        private int $dia;
-        private int $mes;
-        private int $anyo;
+        public int $numDias;
         public function __construct() {
             $this->fechas = array(
                 "1"=> array(
@@ -65,38 +63,32 @@
         */
         function convertirFecha(string $fechaString) {
             $fechaUsuario = explode("-", $fechaString);
-            $this->anyo = (int) $fechaUsuario[0];
-            $this->mes = (int) $fechaUsuario[1];
-            $this->dia = (int) $fechaUsuario[2];
+            
+            $anyo = (int) $fechaUsuario[0];
+            $mes = (int) $fechaUsuario[1];
+            $dia = (int) $fechaUsuario[2];
+
+            $this->numDias = $this->fechas[$mes][0];
+            $this->esBisiesto($anyo);
+
+            return $dia ." de ".$this->fechas[$mes][1]." de ". $anyo;
         }
 
         /*
         * Comprueba si el año del atributo de la clase es bisiesto
         * y si lo es, cambia el número de días de febrero
         */
-        function esBisiesto() {
+        private function esBisiesto($anyo) {
             // Un año es bisiesto si es divisible por 4, pero no por 100
             // A menos que también sea divisible por 400
-            if (($this->anyo % 4 == 0 && $this->anyo % 100 != 0) || ($this->anyo % 400 == 0)) {
+            if (($anyo % 4 == 0 && $anyo % 100 != 0) || ($anyo % 400 == 0)) {
                 $this->cambiarFebrero();
-                return true;
-            } else {
-                return false;
             }
         }
 
-        function cambiarFebrero() {
+        private function cambiarFebrero() {
             $this->fechas[2][0] = 29;
         }
 
-        /*
-        * Visualiza la fecha en formato "El día DD de MM de AAAA"
-        */
-        function visualizarFecha() {
-            return"El día ". $this->dia." de ".$this->fechas[$this->mes][1]." de ".$this->anyo;
-        }
-        function visualizarDiasMes() {
-            return "El mes tiene ".$this->fechas[$this->mes][0]." días";
-        }
     }
 ?>
