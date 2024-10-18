@@ -25,12 +25,4 @@
     $writer = new Xlsx($documento);
     $writer->save('xlsx\ListaEdades.xlsx');
 
-    // $nombreArchivo = 'xlsx\Lista 2DAW 24-25.xlsx';
-    // $documento = IOFactory::load($nombreArchivo);
-    // $totalHojas = $documento->getSheetCount();
-    // $hojaActual = $documento->getSheet(0);
-    // $numeroFilas = $hojaActual->getHighestDataRow();
-    // $ultimaLetra = $hojaActual->getHighestColumn();
-    // $hojaActual->setCellValue('A1', 'Nombre');
-    
 ?>
