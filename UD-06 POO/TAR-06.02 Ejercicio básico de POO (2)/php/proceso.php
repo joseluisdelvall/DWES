@@ -1,5 +1,5 @@
 <?php
-    require_once 'Fecha.php';
+    require_once 'fecha.php';
 
     $fecha = $_GET['fecha'];
 
